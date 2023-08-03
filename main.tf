@@ -17,7 +17,7 @@ provider "azurerm" {
 
 # Create a virtual network
 resource "azurerm_virtual_network" "vnet" {
-  name                = "BatmanInc"
+  name                = var.azurerm_virtual_network_name
   address_space       = ["10.0.0.0/16"]
   location            = "Central US"
   resource_group_name = "1-2c13d6c8-playground-sandbox"
