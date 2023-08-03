@@ -20,5 +20,5 @@ resource "azurerm_virtual_network" "vnet" {
   name                = "BatmanInc"
   address_space       = ["10.0.0.0/16"]
   location            = "Central US"
-  resource_group_name = "<ADD YOUR RESOURCE GROUP NAME>"
+  resource_group_name = "1-2c13d6c8-playground-sandbox"
 }
