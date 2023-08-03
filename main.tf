@@ -21,6 +21,12 @@ resource "azurerm_virtual_network" "vnet" {
   address_space       = ["10.0.0.0/16"]
   location            = "Central US"
   resource_group_name = "1-2c13d6c8-playground-sandbox"
+
+  tags = {
+    Environment = "Terraform Getting Started"
+    Team        = "Batman"
+  }
+
 }
 
 
